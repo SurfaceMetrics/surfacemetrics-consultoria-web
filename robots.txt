@@ -1,4 +1,4 @@
 # /robots.txt
 User-agent: *
 Allow: /
-S https://surfacemetrics.github.io/surfacemetrics-consulting-web/sitemap.xml
+S https://surfacemetrics.github.io/surfacemetrics-consultoria-web/sitemap.xml
