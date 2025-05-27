@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto | Surface Metrics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-green-600">Surface Metrics</a>
+      <ul class="flex space-x-4">
+        <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+        <li><a href="acerca.html" class="hover:text-green-600">Acerca</a></li>
+        <li><a href="productos.html" class="hover:text-green-600">Productos</a></li>
+        <li><a href="contacto.html" class="text-green-600 font-bold">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="py-20 px-4 max-w-xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6 text-center">Contáctanos</h1>
+
+    <form action="https://formspree.io/f/tu-codigo-aqui" method="POST" class="bg-white p-6 rounded shadow space-y-4">
+      <input type="text" name="name" placeholder="Tu nombre" required class="w-full p-3 border rounded">
+      <input type="email" name="email" placeholder="Tu correo electrónico" required class="w-full p-3 border rounded">
+      <textarea name="message" rows="5" placeholder="Escribe tu mensaje..." required class="w-full p-3 border rounded"></textarea>
+      <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer class="bg-white mt-12 py-6 text-center text-gray-600">
+    &copy; 2025 Surface Metrics GmbH.
+  </footer>
+</body>
+</html>

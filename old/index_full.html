@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surface Metrics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 scroll-smooth">
+
+  <!-- Navegación -->
+  <header class="bg-white shadow-md fixed top-0 w-full z-50">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">Surface Metrics</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-green-600">Home</a></li>
+        <li><a href="#about" class="hover:text-green-600">Acerca de Nosotros</a></li>
+        <li><a href="#products" class="hover:text-green-600">Productos</a></li>
+        <li><a href="#contact" class="hover:text-green-600">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen bg-cover bg-center pt-24" style="background-image: url('https://i0.wp.com/techbullion.com/wp-content/uploads/2022/12/Field-Data-Collection.png');">
+    <div class="container mx-auto h-full flex items-center justify-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold mb-4">Bienvenido a Surface Metrics</h1>
+        <p class="text-xl mb-8">Optimización de toma de datos en campo a través de soluciones digitales</p>
+        <a class="bg-green-600 text-white px-6 py-3 rounded-full text-lg" href="#about">Más información</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acerca de Nosotros -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Acerca de nosotros</h2>
+      <div class="flex flex-wrap -mx-4">
+        <div class="w-full md:w-1/2 px-4 mb-8">
+          <img src="https://citizenjournal.net/wp-content/uploads/2022/02/drones-and-UAV-mapping.jpg" alt="equipo profesional" class="rounded-lg shadow-md w-full">
+        </div>
+        <div class="w-full md:w-1/2 px-4">
+          <p class="mb-4">Surface Metrics Solutions está a la vanguardia de la transformación digital en la recopilación de datos. Nuestra misión es optimizar la recopilación de datos y mejorar la eficiencia de la planificación mediante herramientas digitales innovadoras y conocimientos basados en datos.</p>
+          <p class="mb-4">Con un equipo de expertos dedicados y tecnología de vanguardia, brindamos a los ingenieros civiles, arquitectos y directores generales de proyectos las herramientas que necesitan para tomar decisiones informadas, reducir costos y aumentar la precisión de la planificación.</p>
+          <p>Únete a nosotros en nuestro viaje para revolucionar la planificación y crear un futuro más sostenible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos -->
+  <section id="products" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Nuestros Productos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://www.mdpi.com/sensors/sensors-23-01800/article_deploy/html/images/sensors-23-01800-g006.png" alt="Sensor 1" class="w-full h-40 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Sistema UAV Mapping</h3>
+          <p>Solución aérea para levantamientos topográficos de alta precisión.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://www.atlantic.ca/wp-content/uploads/2019/06/gis-satellite-image.jpg" alt="Sensor 2" class="w-full h-40 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Plataforma GIS</h3>
+          <p>Gestión inteligente de datos espaciales para análisis avanzados.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <img src="https://www.smart-sensors.ca/uploads/1/1/4/7/114738331/editor/data-collection.jpg?1614693943" alt="Sensor 3" class="w-full h-40 object-cover mb-4 rounded">
+          <h3 class="text-xl font-semibold mb-2">Smart Sensor Kit</h3>
+          <p>Kit de sensores para monitoreo ambiental y geotécnico en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Contáctanos</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="max-w-xl mx-auto bg-gray-100 p-8 rounded-lg shadow-md">
+        <div class="mb-4">
+          <label class="block text-gray-700">Nombre</label>
+          <input type="text" name="nombre" required class="w-full mt-1 p-2 border rounded" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Correo electrónico</label>
+          <input type="email" name="email" required class="w-full mt-1 p-2 border rounded" />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700">Mensaje</label>
+          <textarea name="mensaje" rows="4" required class="w-full mt-1 p-2 border rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Surface Metrics. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
