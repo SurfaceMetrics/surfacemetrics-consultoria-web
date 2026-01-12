@@ -1,0 +1,598 @@
+<!------------------------------- headlines  ------------------------------->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Surface Metrics Consultoría</title>
+  <meta name="description" content="Empresa especializada en levantamiento de información con drones, análisis geo-espacial y soluciones tecnológicas para empresas."">
+  <meta name="keywords" content="Drones, geo-referenciación, análisis de datos, cartografía, topografía, consultoría tecnológica, Surface Metrics">
+  <meta name="author" content="Nestor Gualsaqui Anrango">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+
+  <!-- Datos estructurados JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SurfaceMetrics Consultoria Web",
+    "url": "https://surfacemetrics.github.io/surfacemetrics-consultoria-web/",
+    "description": "Consultoría web especializada en métricas de superficie y análisis de datos.",
+    "sameAs": [
+      "https://twitter.com/surfacemetrics",
+      "https://www.linkedin.com/in/surface-metrics-consultoria-751831368/"
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-gray-100">
+  <!------------------------------- Navbar ------------------------------->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3.5 flex justify-between items-center">
+      <a class="text-2xl font-bold text-green-600" href="#contactos">
+        Surface Metrics Consultoría
+      </a>
+      <ul class="flex space-x-4">
+        <li>
+          <a class="text-gray-700 hover:text-green-600" href="#home">
+            <strong>Home</strong>
+          </a>
+        </li>
+        <li>
+          <a class="text-gray-700 hover:text-green-600" href="#about">
+            <strong>Acerca de nosotros</strong>
+          </a>
+        </li>
+        <li>
+          <a class="text-gray-700 hover:text-green-600" href="#products">
+            <strong>Productos</strong>
+          </a>
+        </li>
+        <li>
+          <a class="text-gray-700 hover:text-green-600" href="#contactos">
+            <strong>Contactos</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!------------------------------- Hero Section ------------------------------->
+  <section id="home" class="bg-cover bg-center h-screen" style="background-image: url('./imagenes/portada/monitoreo_estructras.jpg');">
+    <div class="container mx-auto h-full flex items-center justify-center">
+      <div class="text-center text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
+        <h1 class="text-5xl font-bold mb-4">
+          Bienvenido a Surface Metrics
+        </h1>
+        <p class="text-xl mb-8">
+          Optimización de toma de datos en campo a través de soluciones profesionales con drones
+        </p>
+        <a class="bg-green-600 text-white px-6 py-3 rounded-full text-lg" href="#about">
+          Más información
+        </a>
+      </div>
+    </div>
+  </section>
+
+<!------------------------------- About Us Section ------------------------------->
+<section id="about" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+      Acerca de nosotros
+    </h2>
+    <div class="flex flex-wrap -mx-4 items-center">
+      <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+        <img
+          alt="Equipo profesional trabajando con drones en soluciones digitales"
+          class="w-full rounded-lg shadow-md"
+          height="400"
+          src="./imagenes/sobre_nosotros/drones_mapping.webp"
+          width="600"
+        />
+      </div>
+      <div class="w-full md:w-1/2 px-4">
+        <p class="text-gray-700 mb-4">
+          En <strong>Surface Metrics Soluciones</strong>, transformamos la manera en que se recopila y analiza la información territorial. Somos cuatro profesionales apasionados por la tecnología, formados en el área y comprometidos con brindar soluciones inteligentes desde Otavalo. Ademas contamos con experiencia internacional en Alemania, lo que nos permite combinar una perspectiva global con un profundo conocimiento del contexto local. .
+        </p>
+        <p class="text-gray-700 mb-4">
+          Utilizamos drones de última generación y herramientas digitales avanzadas para ofrecer a ingenieros civiles, arquitectos y líderes de proyectos la precisión y eficiencia que necesitan para tomar decisiones informadas, reducir costos y optimizar la planificación.
+        </p>
+        <p class="text-gray-700 mb-4">
+          Nos destacamos por nuestro conocimiento técnico, atención personalizada y compromiso con la sostenibilidad. Nuestras soluciones son accesibles, fáciles de usar y adaptables a proyectos de cualquier escala.
+        </p>
+        <p class="text-gray-700">
+          Confía en nosotros para llevar tus ideas al siguiente nivel. En Surface Metrics Soluciones, no solo capturamos datos: <strong>capturamos oportunidades</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!------------------------------- Nuestros Products Section ------------------------------->
+<!-- Nuestros Productos Section -->
+<section id="products" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+      Nuestros servicios
+    </h2>
+    <div class="relative">
+      <!-- Botón anterior -->
+      <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+        &#9664;
+      </button>
+
+      <!-- Carrusel -->
+      <div class="overflow-hidden" id="carousel-wrapper">
+        <div class="flex transition-transform duration-500 ease-in-out" id="product-track">
+
+          <!-- Producto 4 Inspección de Infraestructuras -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 4" class="w-full h-full object-cover" src="https://img.interempresas.net/fotos/2689405.jpeg">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © interempresas.net
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Inspección de Infraestructuras</h3>
+                  <p class="text-gray-700 text-sm">Asegura la integridad de tus estructuras con nuestras inspecciones
+                    detalladas de infraestructuras. Detecta daños, necesidades de mantenimiento y optimiza la gestión
+                    de tus activos con nuestras evaluaciones precisas. ¡Protege tus inversiones y garantiza la seguridad
+                    con nuestras inspecciones de alta resolución!.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="productos_lista.html">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 1 Modelos digitales de terreno -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 1" class="w-full h-full object-cover" src="https://3.bp.blogspot.com/-BrK3GCBJTOQ/VugGWeZmtII/AAAAAAAABDQ/LTxk19MB8iEkMXJB6Bpkq3_uWB0wa0ORA/s1600/lidar%2BDSM.jpgv">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © blogspot.com
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Modelos digitales de terreno (MDT)</h3>
+                  <p class="text-gray-700 text-sm">Descubre la precisión y detalle que nuestros Modelos Digitales de
+                    Elevación pueden ofrecerte. Ideal para proyectos de ingeniería y planificación urbana, nuestros MDE
+                    proporcionan una representación tridimensional del terreno que te permitirá tomar decisiones
+                    informadas y optimizar tus recursos. ¡Transforma tus proyectos con la tecnología más avanzada!.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 1 Fotogrametría con drones -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 1" class="w-full h-full object-cover" src="https://149357839.v2.pressablecdn.com/wp-content/uploads/2024/08/drone-photogrammetry-mapping.webp">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © pressablecdn.com
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Fotogrametría con drones</h3>
+                  <p class="text-gray-700 text-sm">Transformamos imágenes aéreas en mapas precisos y modelos 3D para
+                    tus proyectos de ingeniería, construcción o agricultura. Precisión milimétrica, resultados
+                    rápidos y optimización de recursos.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 1 Planimetría -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 1" class="w-full h-full object-cover" src="https://www.shutterstock.com/image-vector/mapping-drone-lidar-system-result-600nw-2508747045.jpg">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © Shutterstock
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Planimetría</h3>
+                  <p class="text-gray-700 text-sm">Obtén planos detallados del terreno con alta resolución. Ideal
+                    para diseños, obras civiles y planificación urbana. Ahorra tiempo y evita errores desde la
+                    etapa inicial.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 Fotografía y video aérea -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 3" class="w-full h-full object-cover" src="https://st2.depositphotos.com/4325901/48996/i/450/depositphotos_489966862-stock-photo-drone-shoots-wedding-in-mountains.jpg">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © Depositphotos
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Fotografía y video aérea</h3>
+                  <p class="text-gray-700 text-sm">Captura la grandeza de tu proyecto, propiedad o evento desde
+                    una nueva perspectiva. Imágenes impactantes, ideales para marketing, ventas o documentación.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 Ortofotos de alta resolución -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 3" class="w-full h-full object-cover" src="https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/orthophoto-2_ver_1.jpg">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © twinkl.co.uk
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Ortofotos de alta resolución</h3>
+                  <p class="text-gray-700 text-sm">Obtén imágenes aéreas de alta resolución con nuestras ortofotos,
+                    corregidas geométricamente para ofrecerte una vista detallada y precisa de tu área de interés.
+                    Perfectas para estudios topográficos, planificación de infraestructuras y análisis ambiental.
+                    ¡Lleva tus proyectos al siguiente nivel con nuestras ortofotos!.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 Monitoreo Ambiental -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 5" class="w-full h-full object-cover" src="https://noro.mx/wp-content/uploads/2022/01/drones-reforestando-areas.jpg">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © noro.mx
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Monitoreo Ambiental</h3>
+                  <p class="text-gray-700 text-sm">Mantén un seguimiento constante de los cambios en el paisaje,
+                    vegetación y cuerpos de agua con nuestro monitoreo ambiental. Ideal para estudios ecológicos
+                    y de conservación, nuestros datos te permitirán tomar decisiones informadas y proteger
+                    el medio ambiente. ¡Contribuye a la sostenibilidad con nuestro monitoreo avanzado!.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto ¡Conoce todos nuestros productos! -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 6" class="w-full h-full object-cover" src="https://cdn11.bigcommerce.com/s-u81rarrvlz/products/2801/images/4515/safetyculture-drone-safe-work-method-statement__47595.1640163086.386.513.jpg?c=1">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © bigcommerce.com
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">¡Conoce todos nuestros productos!</h3>
+                  <p class="text-gray-700 text-sm">¿Estás buscando soluciones innovadoras para mejorar la eficiencia
+                    y precisión de tus proyectos? Nuestros productos de levantamiento de información con drones de
+                    alta resolución están diseñados para ofrecerte datos detallados y valiosos.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 Mapa de salud de cultivos -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 2" class="w-full h-full object-cover" src="https://imagenagropecuaria.com/wp-content/uploads/2020/07/dron.jpg">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © imagenagropecuaria.com
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Mapa de salud de cultivos (Agricultura de precisión)</h3>
+                  <p class="text-gray-700 text-sm">Optimiza tu producción agrícola con nuestros mapas de salud de
+                    cultivos. Utilizando drones equipados con cámaras multiespectrales, te proporcionamos información
+                    detallada sobre el estado de tus cultivos, identificando áreas con estrés hídrico, deficiencias
+                    nutricionales y presencia de plagas. Toma decisiones informadas y aumenta tu rendimiento y protege
+                    tus cultivos con nuestra tecnología.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 Apoyo en búsqueda y rescate -->
+          <div class="carousel-item px-4 mb-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md h-[500px] flex flex-col">
+              <div class="h-[40%] w-full overflow-hidden relative">
+                <img alt="Producto 2" class="w-full h-full object-cover" src="https://www.infodron.es/images/showid2/5216408?w=900&mh=700">
+                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-40 text-white text-xs px-2 py-0.5 text-center">
+                  Imagen © infodron.es
+                </div>
+              </div>
+              <div class="p-4 h-[60%] flex flex-col justify-between">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">Búsqueda y rescate</h3>
+                  <p class="text-gray-700 text-sm">Agilizamos la localización de personas en zonas de difícil acceso
+                    mediante tecnología aérea. Rapidez y precisión para situaciones críticas donde cada minuto cuenta.</p>
+                </div>
+                <a class="text-green-600 hover:underline mt-2 text-sm" href="#">Más información</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Botón siguiente -->
+      <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+        &#9654;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- JS Carrusel sin restricción de fecha -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const track = document.getElementById('product-track');
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+    const items = () => Array.from(track.querySelectorAll('.carousel-item'));
+
+    let currentIndex = 0;
+    let itemsPerPage = 3;
+    let totalItems = 0;
+    let totalPages = 0;
+
+    function updateItemsPerPage() {
+      if (window.innerWidth < 640) {
+        itemsPerPage = 1;
+      } else if (window.innerWidth < 1024) {
+        itemsPerPage = 2;
+      } else {
+        itemsPerPage = 4;
+      }
+    }
+
+    function applyItemWidths() {
+      const allItems = items();
+      allItems.forEach(item => {
+        item.style.flex = `0 0 ${100 / itemsPerPage}%`;
+      });
+    }
+
+    function updatePages() {
+      totalItems = items().length;
+      totalPages = Math.ceil(totalItems / itemsPerPage);
+    }
+
+    function moveToPage(index) {
+      const percent = index * (100);
+      track.style.transform = `translateX(-${percent}%)`;
+    }
+
+    function goToNextPage() {
+      currentIndex = (currentIndex + 1) % totalPages;
+      moveToPage(currentIndex);
+    }
+
+    function goToPrevPage() {
+      currentIndex = (currentIndex - 1 + totalPages) % totalPages;
+      moveToPage(currentIndex);
+    }
+
+    function initCarousel() {
+      updateItemsPerPage();
+      applyItemWidths();
+      updatePages();
+      currentIndex = Math.min(currentIndex, totalPages - 1);
+      moveToPage(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', goToPrevPage);
+    nextBtn.addEventListener('click', goToNextPage);
+    window.addEventListener('resize', () => {
+      initCarousel();
+    });
+
+    initCarousel();
+  });
+</script>
+
+  <!------------------------------- Team Section ------------------------------->
+  <section id="products" class= "bg-gray-200 py-12">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-800">
+          Nuestro equipo de trabajo
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="text-center">
+          <img alt="Portrait of Martín Álvarez, CEO" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" height="300" src="./imagenes/accionistas/Martin_Alvarez.jfif" width="300"/>
+          <h3 class="text-xl font-bold text-gray-800">
+            M.Sc Martín Álvarez
+          </h3>
+          <p class="text-gray-600">
+       <p>Co-fundador</p>
+       <p>Consultor Técnico en Geotecnologías y Vinculación Comercial</p>
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Portrait of Israel Paredes, CTO" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" height="300" src="./imagenes/accionistas/Israel_Paredes.jpeg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800">
+       M.Sc Israel Paredes
+      </h3>
+      <p class="text-gray-600">
+       <p>Co-fundador</p>
+       <p>Especialista en Vuelo, Captura de Datos y Fotogrametría</p>
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Portrait of Nestor Gualsaqui, CFO" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" height="300" src="./imagenes/accionistas/Nestor_Anrango.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800">
+       M.Sc Nestor Gualsaqui
+      </h3>
+      <p class="text-gray-600">
+       <p>Co-fundador</p>
+       <p>Especialista en Procesamiento Geoespacial y Fotogrametría</p>
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Portrait of Emily Davis, COO" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" height="300" src="./imagenes/accionistas/Danilo_Tixilema.jfif" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800">
+       M.Sc Danilo Tixilema
+      </h3>
+      <p class="text-gray-600">
+       <p>Co-fundador</p>
+       <p>Especialista en Modelado 3D y Gestor de Proyectos Geoespaciales</p>
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Portrait of Jorge Gualsaqui, CMO" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4" height="300" src="./imagenes/accionistas/Jorge_Anrango.jpg" width="300"/>
+      <h3 class="text-xl font-bold text-gray-800">
+       Abg. Jorge Gualsaqui
+      </h3>
+      <p class="text-gray-600">
+       <p>Asesor Legal de la Consultoría</p>
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+
+  <!----------------------------- Contact Section ---------------------------------->
+<footer class="bg-gray-100 py-16">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap justify-between text-gray-700">
+
+      <!-- Contacto -->
+        <div id="contactos" class="w-1/2 md:w-1/4 mb-7 md:mb-0 bg-gray p-6 rounded-lg shadow-sm border border-white-100">
+          <h4 class="text-xl font-semibold mb-4 text-black-700">📞 Contáctanos</h4>
+          <p class="mb-2 text-gray-800">
+            <strong>Email:</strong>
+            <a href="mailto:surfacemetrics.ec@gmail.com" class="text-blue-600 hover:underline block">
+              surfacemetrics.ec@gmail.com
+            </a>
+          </p>
+          <p class="mb-2 text-gray-800">
+            <strong>Teléfono:</strong>
+            <a href="tel:08008889846" class="text-blue-600 hover:underline block">
+              ¡Próximamente!
+            </a>
+          </p>
+          <p class="mb-2 text-gray-800">
+            <strong>WhatsApp:</strong> +593 98 825 8312
+          </p>
+          <p class="text-gray-800">
+            <strong>Horario:</strong> Lunes a Viernes, 9am - 3pm
+          </p>
+        </div>
+      <!-- Menú -->
+      <div class="w-full md:w-2/3 flex flex-wrap">
+        <!-- Productos -->
+        <div class="w-1/2 md:w-1/4 mb-6">
+          <h6 class="font-semibold mb-2">Productos</h6>
+          <ul>
+            <li><a href="/ar/es/products/field-manager.html" class="hover:text-blue-600">- Modelos digitales de terreno</a></li>
+            <li><a href="/ar/es/products/field-manager.html" class="hover:text-blue-600">- Ortofotos de alta calidad</a></li>
+            <li><a href="/ar/es/products/field-manager.html" class="hover:text-blue-600">- Estado de salud de vegetacion</a></li>
+          </ul>
+        </div>
+        <!-- Nosotros -->
+        <div class="w-1/2 md:w-1/4 mb-6">
+          <h6 class="font-semibold mb-2">Acerca de nosotros</h6>
+          <ul>
+            <li><a href="/ar/es.html" class="hover:text-blue-600">Página principal</a></li>
+            <li><a href="/ar/es/about-us.html" class="hover:text-blue-600">Quiénes somos</a></li>
+          </ul>
+        </div>
+        <!-- Recursos -->
+        <div class="w-1/2 md:w-1/4 mb-6">
+          <h6 class="font-semibold mb-2">Recursos</h6>
+          <ul>
+            <li><a href="/ar/es/support.html" class="hover:text-blue-600">Empieza ahora</a></li>
+            <li><a href="/ar/es/support.html" class="hover:text-blue-600">Soporte Tecnico</a></li>
+          </ul>
+        </div>
+        <!-- App -->
+        <div class="w-1/2 md:w-1/4 mb-6">
+          <h6 class="font-semibold mb-2">Descargá la App</h6>
+          <ul>
+            <li><a href="#" class="hover:text-blue-600">App Store</a></li>
+            <li><a href="#" class="hover:text-blue-600">Google Play</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Redes sociales y legal -->
+    <div class="mt-12 border-t pt-6 text-center text-sm text-gray-600">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a href="https://www.instagram.com/surfacemetrics/" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="w-8 h-8">
+        </a>
+        <a href="https://twitter.com/xarviodf" target="_blank" title="Twitter">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-8 h-8">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61576740170616" target="_blank" title="Facebook">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="w-8 h-8">
+        </a>
+        <a href="https://www.youtube.com/@SurfaceMetricsConsultoria" target="_blank" title="YouTube">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="w-8 h-8">
+        </a>
+        <a href="https://www.tiktok.com/@surface_metrics?lang=en" target="_blank" title="TikTok">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" class="w-8 h-8">
+        </a>
+      </div>
+
+      <p>Siguenos en nuestras redes</p>
+      <ul class="flex justify-center flex-wrap gap-4 mt-2">
+        <li><a href="#" class="hover:text-blue-600">Condiciones de uso</a></li>
+        <li><a href="#" class="hover:text-blue-600">Información legal</a></li>
+        <li><a href="#" class="hover:text-blue-600">Privacidad</a></li>
+        <li><a href="#" class="hover:text-blue-600">Cookies</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <!------------------------------- Footer ------------------------------->
+  <footer class="bg-gray-800 py-6">
+   <div class="container mx-auto px-4 text-center text-white">
+    <p>
+     © 2025 Surface Metrics Soluciones. Todos los derechos reservados.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,54 @@
+# Create the sitemap.xml content
+sitemap_content = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://surfacemetrics.github.io/surfacemetrics-consultoria-web/</loc>
+    <lastmod>2023-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://surfacemetrics.github.io/surfacemetrics-consultoria-web/about.html</loc>
+    <lastmod>2023-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://surfacemetrics.github.io/surfacemetrics-consultoria-web/services.html</loc>
+    <lastmod>2023-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://surfacemetrics.github.io/surfacemetrics-consultoria-web/contact.html</loc>
+    <lastmod>2023-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+"""
+
+# Save the sitemap.xml content to a file
+with open('sitemap.xml', 'w') as f:
+    f.write(sitemap_content)
+
+# Create the JSON-LD structured data content
+json_ld_content = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SurfaceMetrics Consultoria Web",
+  "url": "https://surfacemetrics.github.io/surfacemetrics-consultoria-web/",
+  "description": "Consultoría web especializada en métricas de superficie y análisis de datos.",
+  "sameAs": [
+    "https://twitter.com/surfacemetrics",
+    "https://www.linkedin.com/company/surfacemetrics"
+  ]
+}
+
+# Save the JSON-LD structured data content to a file
+import json
+with open('structured_data.json', 'w') as f:
+    json.dump(json_ld_content, f, indent=2)
+
+print("sitemap.xml and structured_data.json files have been created successfully.")
+
